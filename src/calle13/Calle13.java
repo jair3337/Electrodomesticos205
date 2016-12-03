@@ -20,60 +20,66 @@ public class Calle13 {
         Scanner read = new Scanner(System.in);
 //        System.out.println("Ingrese alto, ancho, marca y entrada electrica del televisor");
 //        Televisor tv2 = new Televisor(read.nextDouble(),read.nextDouble(),read.next(),read.next());
-        Televisor tv1=new Televisor(35.0, 65.5, "LG","120VAC");//Instancia del televisor
+        
+           MicroWave Micro= new MicroWave(20,20,"lg","120V");
+           Televisor tv1=new Televisor(35.0, 65.5, "LG","120VAC");//Instancia del televisor
+           System.out.println("cuantos segundos desea calentar su comida");
+           Micro.temporizador(read.nextInt());
+           
+        
 //        
-int opcion;
-        do {
-            System.out.println("Ingrese 1 para encender el televisor");
-            opcion = read.nextInt();
-            if (opcion==1) {
-              tv1.enceder();  
-            }
-        } while (opcion!=1);
-        
-        
-        do {
-            System.out.println("Seleccione una opcion");
-            tv1.mostrarMenu();
-            opcion = read.nextInt();
-            
-            switch  (opcion){
-                
-                case 1:
-                    tv1.enceder();
-                    break;
-                    
-                case 2:
-                    tv1.subirVol();
-                    break;
-                    
-                case 3:
-                    tv1.bajarVolumen();
-                    break;
-                    
-                case 4:
-                    tv1.subirCanal();
-                    break;
-                    
-                case 5:
-                    tv1.bajarCanal();
-                    break;
-                    
-                case 6:
-                    tv1.silenciar();
-                    break;
-                    
-                case 7:
-                    System.out.println("Ingrese el canal");
-                    tv1.cambiarCanal(read.nextInt());
-                    break;              
-            }
-            System.out.println(tv1);
-        } while (opcion!=1);
-        
-        
-        
-       
+//int opcion;
+//        do {
+//            System.out.println("Ingrese 1 para encender el televisor");
+//            opcion = read.nextInt();
+//            if (opcion==1) {
+//              tv1.enceder();  
+//            }
+//        } while (opcion!=1);
+//        
+//        
+//        do {
+//            System.out.println("Seleccione una opcion");
+//            tv1.mostrarMenu();
+//            opcion = read.nextInt();
+//            
+//            switch  (opcion){
+//                
+//                case 1:
+//                    tv1.enceder();
+//                    break;
+//                    
+//                case 2:
+//                    tv1.subirVol();
+//                    break;
+//                    
+//                case 3:
+//                    tv1.bajarVolumen();
+//                    break;
+//                    
+//                case 4:
+//                    tv1.subirCanal();
+//                    break;
+//                    
+//                case 5:
+//                    tv1.bajarCanal();
+//                    break;
+//                    
+//                case 6:
+//                    tv1.silenciar();
+//                    break;
+//                    
+//                case 7:
+//                    System.out.println("Ingrese el canal");
+//                    tv1.cambiarCanal(read.nextInt());
+//                    break;              
+//            }
+//            System.out.println(tv1);
+//        } while (opcion!=1);
+//        
+//        
+//        
+//       
     }
     
 }
