@@ -11,7 +11,7 @@ package calle13;
  */
 public class MicroWave extends Electrodomestico {
     int temperatura;
-    int temporuzador;
+    int temporizador;
     int areaCalentador;
 
     public MicroWave(String marca, String entradaelectrica) {
