@@ -21,11 +21,15 @@ public class MicroWave extends Electrodomestico {
     {
         areaCalentador=ancho*profundidad;
     }
-    public void Temporizador(int tiempo)
-    {
-        do {            
-            
-        } while (true);
+    public void temporizador(int tiempo)
+    {   
+        this.tiempocalentar=tiempo;
+        do {     
+            tiempocalentar=tiempocalentar;
+            tiempocalentar--;
+            System.out.println(tiempocalentar+" Segundos");
+        } while (tiempocalentar!=0);
+        
     }
     public MicroWave(int ancho, int profundidad, String marca, String entradaelectrica) {
         super(marca, entradaelectrica);
