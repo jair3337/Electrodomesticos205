@@ -15,9 +15,17 @@ public class MicroWave extends Electrodomestico {
     int areaCalentador;
     int ancho;
     int profundidad;
+    int tiempocalentar;
+    
     public void calcularAreaCalentador()
     {
-        
+        areaCalentador=ancho*profundidad;
+    }
+    public void Temporizador(int tiempo)
+    {
+        do {            
+            
+        } while (true);
     }
     public MicroWave(int ancho, int profundidad, String marca, String entradaelectrica) {
         super(marca, entradaelectrica);
