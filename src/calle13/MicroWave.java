@@ -9,6 +9,17 @@ package calle13;
  *
  * @author Jair
  */
-public class MicroWave  {
-    
+public class MicroWave extends Electrodomestico {
+    int temperatura;
+    int temporuzador;
+    int areaCalentador;
+
+    public MicroWave(String marca, String entradaelectrica) {
+        super(marca, entradaelectrica);
+    }
+
+    @Override
+    void enceder() {
+        
+    }
 }
