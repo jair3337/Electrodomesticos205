@@ -17,29 +17,46 @@ public class MicroWave extends Electrodomestico {
     int profundidad;
     int tiempocalentar;
     
-    public void calcularAreaCalentador()
+    public void calcularAreaCalentador(int anchocalentador, int profundidadcalentador)
     {
         areaCalentador=ancho*profundidad;
     }
     public void temporizador(int tiempo)
     {   
         this.tiempocalentar=tiempo;
-        do {     
+        
+        if (tiempo<1800) 
+        {
+           do 
+           {     
             tiempocalentar=tiempocalentar;
             tiempocalentar--;
             System.out.println(tiempocalentar+" Segundos");
-        } while (tiempocalentar!=0);
+           } 
+            while (tiempocalentar!=0);
+           
+        }
+        else
+        {
+            System.out.println("El tiempo excede el limite");
+        }
+        
+        
         
     }
     public MicroWave(int ancho, int profundidad, String marca, String entradaelectrica) {
         super(marca, entradaelectrica);
         this.ancho=ancho;
         this.profundidad=profundidad;
-        calcularAreaCalentador();
+        
     }
 
     @Override
     void enceder() {
         
+    }
+
+    void areaCalentador(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
